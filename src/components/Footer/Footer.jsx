@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import { Container} from "react-bootstrap";
+import './Footer.css'; 
 
-function Footer() {
+const MyComponent = () => {
   return (
-    <div>
+    <Container className="mt-5">
       
-    </div>
-  )
-}
+      <hr />
+      <p className="text-center">Copyright © 20XX. All rights reserved.</p>
+    </Container>
+  );
+};
 
-export default Footer
+export default MyComponent;

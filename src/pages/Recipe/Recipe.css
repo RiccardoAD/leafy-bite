@@ -1,0 +1,155 @@
+.recipe-container {
+    color: #868686;
+    margin: 80px auto;
+    padding: 0 50px;
+    max-width: 1100px;
+    font-weight: 400;
+}
+
+.recipe-container p {
+    line-height: 25px;
+}
+
+.recipe-container h2 {
+    font-size: 3rem;
+}
+
+.gray-container {
+    background: #F6F6F6;
+    border-radius: 30px;
+    margin: 40px auto;
+    display: flex;
+    padding: 20px;
+}
+
+.gray-container img {
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.all-info {
+    margin-left: 50px;
+    color: #C8C8C8;
+    font-weight: 400;
+}
+
+.recipe-info {
+    border: solid rgb(195, 195, 195) 1px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin: 20px 0;
+}
+
+.recipe-info p {
+    font-weight: bolder;
+    padding: 0 10px;
+    font-weight: 400;
+    color: #9e9e9e;
+}
+
+.recipe-info span {
+    font-weight: bold;
+}
+
+.ingredients h3, .instructions h3 {
+    color: #23B791;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ingredients {
+    color: #9e9e9e;
+    font-weight: 400;
+}
+
+.instructions {
+    color: #868686;
+    line-height: 1.2rem;
+    margin-top: 40px;
+    font-weight: 400;
+}
+
+.instructions h3 {
+    margin-bottom: 20px;
+}
+
+.tag-container {
+    color: #868686;
+    display: flex;
+    margin: 20px 0;
+}
+
+.tag-container p {
+    border: #d5d5d5 solid 1px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.label {
+    position: absolute;
+    background-color: #00CC76;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.number-cnt {
+    background: #00CC76;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number {
+    width: 30px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.instructions-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .recipe-container {
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .recipe-container h2 {
+        font-size: 2rem;
+    }
+    .tag-container {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .gray-container {
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .gray-container img {
+        width: 100%;
+    }
+    .all-info {
+        margin-left: 0;
+    }
+    .all-info li {
+        margin-left: 20px;
+    }
+}

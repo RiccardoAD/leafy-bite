@@ -33,8 +33,10 @@
 }
 
 .logo {
-    width: 20px;
+    width: 2rem;
     margin-right: 10px;
+    margin-bottom: auto;
+    
 }
 
 @media only screen and (max-width: 600px) {

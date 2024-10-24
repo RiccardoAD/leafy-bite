@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import React from "react";
+import {
+  
+  // Route
+  
+   Routes, BrowserRouter } from "react-router-dom";
+// import Home from './pages/Home';
+// import Searched from './pages/Searched/Searched';
+// import Recipe from './pages/Recipe/Recipe';
+import Navbar from '../src/components/Navbar/Navbar.jsx';
+import Footer from '../src/components/Footer/Footer.jsx';
+
+// import Favorites from './pages/Favorites/Favorites';
 import './App.css';
 
+// import { FavoritesProvider } from './FavoritesContext';
+
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <FavoritesProvider>
+        <BrowserRouter
+        //  basename={process.env.PUBLIC_URL}
+         >
+        <Navbar />
+          <Routes>
+            {/* <Route exact path="/" element={<Home />} />
+            <Route path="/searched/:search" element={<Searched />} />
+            <Route path="/recipe/:name" element={<Recipe />} /> */}
+            {/* <Route path="/favorites/" element={<Favorites />} /> */}
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+    // </FavoritesProvider>
   );
 }
 
