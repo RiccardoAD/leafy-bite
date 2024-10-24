@@ -1,0 +1,52 @@
+.navbar {
+    background: linear-gradient(#23B791, #00CC76);
+    width: 100%;
+    height: 70px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.favorite-link {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin-left: 30px;
+    width: 100%;
+}
+
+.favorite-link:hover {
+    text-decoration: underline 1px white;
+}
+
+.logo-container {
+    color: white;
+    display: flex;
+}
+
+.logo-container h3 {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.logo {
+    width: 20px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 130px;
+        padding: 20px;
+    }
+    .favorite-link {
+        margin-top: 10px;
+        margin-left: auto;
+    }
+}
